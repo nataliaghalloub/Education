@@ -11,7 +11,7 @@ page = st.sidebar.selectbox("Select a page:", ["Introduction", "Visualizations"]
 # Load the dataset
 @st.cache_data  # Changed to st.cache_data to avoid deprecation warning
 def load_data():
-    return pd.read_csv('C:/Users/User/Desktop/325 V/Assigments/A1/education level.csv')
+    return pd.read_csv('education level.csv')
 
 data = load_data()
 
