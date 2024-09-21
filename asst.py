@@ -26,7 +26,27 @@ if page == "Introduction":
         You will be able to explore university education levels, school dropout rates, and other educational metrics 
         across regions. The following pages will allow you to interact with the data through visualizations.
     """)
+        # Explanation of the Visualizations
+    st.subheader("Description of Visualizations")
     
+    st.write("""
+        **1. Stacked Bar Chart: "Top 10 Towns by Selected Education Levels"**
+        
+        - **Goal**: This chart helps users explore the top towns with the highest levels of university-educated residents, along with other educational categories such as secondary, intermediate, elementary, and vocational education. 
+        It provides a comparative view of how the selected educational levels are distributed among the top towns.
+        
+        - **Interactivity**: 
+          - Users can **select the number of top towns** to display (from 5 to 20).
+          - Users can also **choose specific educational levels** to visualize in the chart, such as university, secondary, or vocational education. 
+          - The stacked bar chart allows users to compare the education levels within each town side by side.
+        
+        **2. Pie Chart: "Education Levels Distribution in Selected Town"**
+        
+        - **Goal**: This visualization provides a detailed breakdown of the education levels within a specific town. Users can focus on individual towns and see the proportional distribution of education categories (such as intermediate, university, or elementary).
+        
+        - **Interactivity**:
+          - Users can **select a specific town** from the dropdown list, and the pie chart updates to display the education level distribution for that town. This provides a detailed view, complementing the broader overview provided by the bar chart.
+    """)
     # Display dataset information
     st.write("Here is a preview of the dataset used:")
     st.write(data.head())  # Show the first few rows of the dataset
